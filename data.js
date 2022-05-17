@@ -120,11 +120,22 @@ const container = document.querySelector(".container");
 for(i = 0; i < icons.length; i++){
 	
 	let icona = `	
-		<div class="box">
+		<div id="icon-container-${i}" class="box">
 			<i class="${icons[i].prefix}solid ${icons[i].prefix}${icons[i].name}"></i>
 		</div>
 	
 	`
 	
 	container.innerHTML += icona;
+
+	
+	let iconContainer = document.getElementById(`icon-container-${i}`);
+
+	if(icons[i].color == "blue"){
+		iconContainer.classList.add("color-purple");
+	} else if(icons[i].color == "orange"){
+		iconContainer.classList.add("color-blue");
+	} else if(icons[i].color == "green"){
+		iconContainer.classList.add("color-orange");
+	}
 }

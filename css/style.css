@@ -11,21 +11,55 @@ body{
 
 h1{
     text-align: center;
+    color: lightblue;
+}
+
+.filter{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: lightblue;
+    gap: 20px;
 }
 
 .container{
     display: flex;
     flex-wrap: wrap;
     gap: 150px;
-    margin-top: 50px;
-    margin-left: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    background-color: lightgray;
 }
 
 .box{
-    width: 100px;
+    width: 200px;
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 80px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.444);
+    
+}
+
+
+
+/* COLOR CLASSES */
+
+.color-blue{
+    color: blue;
+}
+
+.color-orange{
+    color: orange;
+}
+
+.color-purple{
+    color: purple;
 }
